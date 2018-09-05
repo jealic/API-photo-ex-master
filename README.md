@@ -1,24 +1,5 @@
-# README
+# 初版本說明
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository came from the fork version of AlphaCamp's API-photo-ex-base one. I had some operational error, so I decided to 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+open a new repository to put in my master branch. Its last commit is [](https://i.imgur.com/wTeGB4g.png)
