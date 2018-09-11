@@ -10,6 +10,11 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '287d0d70639ac45c9beec4adca41cbcc12340f19185e8d5c1021fa9d1907efc5c8e1987f0d72ccd459652093a4b324bd316ab6342a74409ccac1cd1128c13334'
 
+  # ***** 把 API Key 放進設定檔 *****
+  fb_config = Rails.application.config_for(:facebook)
+  # 以下是佈署時要藏起來的原始指令
+  config.omniauth :facebook, fb_config["app_id"], fb_config["secret"], scope: "public_profile,email", info_fields: "email,name", callback_url: "http://localhost:3000/users/auth/facebook/callback"
+
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
